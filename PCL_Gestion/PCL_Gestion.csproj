@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAE93307-62B0-453C-A9DC-166D68DEB21E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PCL_Gestion</RootNamespace>
+    <AssemblyName>PCL_Gestion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessRules\BRCalcularTotal.cs" />
+    <Compile Include="BusinessRules\BRComparativo.cs" />
+    <Compile Include="BusinessRules\BRCreditoDetalle.cs" />
+    <Compile Include="BusinessRules\BRListado.cs" />
+    <Compile Include="BusinessRules\BRPortal.cs" />
+    <Compile Include="dao\daoBancos.cs" />
+    <Compile Include="dao\daoConceptos.cs" />
+    <Compile Include="dao\daoConexion.cs" />
+    <Compile Include="dao\daoContactos.cs" />
+    <Compile Include="dao\daoCreditos.cs" />
+    <Compile Include="dao\daoCreditosDetalle.cs" />
+    <Compile Include="dao\daoEgresos.cs" />
+    <Compile Include="dao\daoGenerico.cs" />
+    <Compile Include="dao\daoImpuestos.cs" />
+    <Compile Include="dao\daoIngresos.cs" />
+    <Compile Include="dao\daoPeriodicidad.cs" />
+    <Compile Include="dao\daoPersonas.cs" />
+    <Compile Include="dao\daoPresupuestos.cs" />
+    <Compile Include="dao\daoRecibos.cs" />
+    <Compile Include="dao\daoReferencias.cs" />
+    <Compile Include="dao\daoSubTipoEgresosIngresos.cs" />
+    <Compile Include="dao\daoTipoEgresosIngresos.cs" />
+    <Compile Include="dao\daoTipoReferencias.cs" />
+    <Compile Include="dao\daoUsuariosSistema.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="str\strBanco.cs" />
+    <Compile Include="str\strConcepto.cs" />
+    <Compile Include="str\strContacto.cs" />
+    <Compile Include="str\strCredito.cs" />
+    <Compile Include="str\strCreditoDetalle.cs" />
+    <Compile Include="str\strEgreso.cs" />
+    <Compile Include="str\strImpuesto.cs" />
+    <Compile Include="str\strIngreso.cs" />
+    <Compile Include="str\strPeriodicidad.cs" />
+    <Compile Include="str\strPersona.cs" />
+    <Compile Include="str\strPresupuesto.cs" />
+    <Compile Include="str\strRecibo.cs" />
+    <Compile Include="str\strReferencia.cs" />
+    <Compile Include="str\strSubTipoEgresoIngreso.cs" />
+    <Compile Include="str\strTipoEgresoIngreso.cs" />
+    <Compile Include="str\strTipoReferencia.cs" />
+    <Compile Include="str\strUsuarioSistema.cs" />
+    <Compile Include="util\CreaXML.cs" />
+    <Compile Include="util\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

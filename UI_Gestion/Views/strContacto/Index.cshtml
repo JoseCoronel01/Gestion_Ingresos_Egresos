@@ -1,0 +1,66 @@
+﻿@model IEnumerable<UI_Gestion.Models.strContacto>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Nuevo", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefonoOficina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefonoCelular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoOficina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoCelular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.Persona }) |
+                @Html.ActionLink("Detalle", "Details", new { id=item.Persona }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id=item.Persona })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

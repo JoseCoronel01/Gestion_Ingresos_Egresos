@@ -1,0 +1,74 @@
+﻿@model UI_Gestion.Models.strContacto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Direccion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TelefonoCasa)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TelefonoCasa)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TelefonoOficina)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TelefonoOficina)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TelefonoCelular)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TelefonoCelular)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Correo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Correo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CorreoAlt)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CorreoAlt)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Persona }) |
+        @Html.ActionLink("Regresar", "Index")
+    </p>
+</body>
+</html>

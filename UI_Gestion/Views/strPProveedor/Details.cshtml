@@ -1,0 +1,50 @@
+﻿@model UI_Gestion.Models.strPProveedor
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.RazonSocial)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.RazonSocial)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NombreComercial)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NombreComercial)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Rfc)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Rfc)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Regresar", "Index")
+    </p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿@model UI_Gestion.Models.strPCliente
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ApellidoPaterno)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ApellidoPaterno)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ApellidoMaterno)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ApellidoMaterno)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-default" /> |
+                @Html.ActionLink("Regresar", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

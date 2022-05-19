@@ -1,0 +1,42 @@
+﻿@model UI_Gestion.Models.strUsuarioSistema
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Usuario)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Tipo)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Usuario }) |
+        @Html.ActionLink("Regresar", "Index")
+    </p>
+</body>
+</html>

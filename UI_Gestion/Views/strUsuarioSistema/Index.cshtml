@@ -1,0 +1,48 @@
+﻿@model IEnumerable<UI_Gestion.Models.strUsuarioSistema>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Nuevo", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.Usuario }) |
+                @Html.ActionLink("Detalle", "Details", new { id=item.Usuario }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id=item.Usuario })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
