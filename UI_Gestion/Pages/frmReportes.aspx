@@ -5,31 +5,56 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <asp:DropDownList ID="ddlTipoReporte" runat="server" CssClass="form-control"
-                    DataValueField="value" DataTextField="text"
-                    AutoPostBack="true" OnSelectedIndexChanged="ddlTipoReporte_SelectedIndexChanged">
-                </asp:DropDownList>
+                <div>
+                    <asp:Label runat="server" Text="Tipo de Reporte:"></asp:Label>
+                </div>
+                <div>
+                    <asp:DropDownList ID="ddlTipoReporte" runat="server" CssClass="form-control"
+                        DataValueField="value" DataTextField="text"
+                        AutoPostBack="true" OnSelectedIndexChanged="ddlTipoReporte_SelectedIndexChanged">
+                    </asp:DropDownList>
+                </div>
             </div>
             <div class="col-md-3">
-                <asp:DropDownList ID="ddlTipo" runat="server" DataValueField="Clave" 
-                    DataTextField="Nombre" AutoPostBack="true" 
-                    OnSelectedIndexChanged="ddlTipo_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
+                <div>
+                    <asp:Label runat="server" Text="Tipo:"></asp:Label>
+                </div>
+                <div>
+                    <asp:DropDownList ID="ddlTipo" runat="server" DataValueField="Clave" 
+                        DataTextField="Nombre" AutoPostBack="true" 
+                        OnSelectedIndexChanged="ddlTipo_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
+                </div>
             </div>
             <div class="col-md-3">
-                <asp:DropDownList ID="ddlEstatus" runat="server" CssClass="form-control"
-                    DataValueField="value" DataTextField="text">
-                </asp:DropDownList>
+                <div>
+                    <asp:Label runat="server" Text="Estatus:"></asp:Label>
+                </div>
+                <div>
+                    <asp:DropDownList ID="ddlEstatus" runat="server" CssClass="form-control"
+                        DataValueField="value" DataTextField="text">
+                    </asp:DropDownList>
+                </div>
             </div>
             <div class="col-md-3">
-                <asp:CheckBox ID="chBoxImpuesto" runat="server" Text="Con Impuesto" CssClass="form-control" />
+                <div>
+                    <asp:Label runat="server" Text="Impuesto:"></asp:Label>
+                </div>
+                <div>
+                    <asp:CheckBox ID="chBoxImpuesto" runat="server" Text="Con Impuesto" CssClass="form-control" />
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
             </div>
             <div class="col-md-3">
-                <asp:DropDownList ID="ddlSubTipo" runat="server" DataValueField="Clave" 
-                    DataTextField="Nombre" CssClass="form-control"></asp:DropDownList>
+                <div>
+                    <asp:Label runat="server" Text="Subtipo:"></asp:Label>
+                </div>
+                <div>
+                    <asp:DropDownList ID="ddlSubTipo" runat="server" DataValueField="Clave" 
+                        DataTextField="Nombre" CssClass="form-control"></asp:DropDownList>
+                </div>
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-3">
