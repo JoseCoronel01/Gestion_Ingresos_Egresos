@@ -178,6 +178,7 @@
     <Content Include="img\sis1.1.jpg" />
     <Content Include="img\sis1.jpg" />
     <Content Include="Inicio.aspx" />
+    <Content Include="Pages\frmCambiarContrasena.aspx" />
     <Content Include="Pages\frmCatalogos.aspx" />
     <Content Include="Pages\frmEgresos.aspx" />
     <Content Include="Pages\frmGenReporte.aspx" />
@@ -276,6 +277,13 @@
     <Compile Include="Models\strTipoEgresoIngreso.cs" />
     <Compile Include="Models\strTipoReferencia.cs" />
     <Compile Include="Models\strUsuarioSistema.cs" />
+    <Compile Include="Pages\frmCambiarContrasena.aspx.cs">
+      <DependentUpon>frmCambiarContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\frmCambiarContrasena.aspx.designer.cs">
+      <DependentUpon>frmCambiarContrasena.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\frmCatalogos.aspx.cs">
       <DependentUpon>frmCatalogos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

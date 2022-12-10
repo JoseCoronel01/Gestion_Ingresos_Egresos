@@ -104,5 +104,10 @@ namespace UI_Gestion
             this.CleanSessionVariable();
             this.Page.Response.Redirect("/Inicio.aspx");
         }
+
+        protected void linkCambiarContrasena_Click(object sender, EventArgs e)
+        {
+            this.Page.Response.Redirect("/Pages/frmCambiarContrasena.aspx");
+        }
     }
 }

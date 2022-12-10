@@ -48,6 +48,10 @@
                 </div>
                 <div style="width: 8px;"></div>
                 <div>
+                    <asp:LinkButton ID="linkCambiarContrasena" runat="server" Text="CAMBIAR CONTRASEÑA" OnClick="linkCambiarContrasena_Click" />
+                </div>
+                <div style="width: 8px;"></div>
+                <div>
                     <asp:LinkButton ID="linkSalir" runat="server" Text="SALIR" OnClick="linkSalir_Click" />
                 </div>
             </div>

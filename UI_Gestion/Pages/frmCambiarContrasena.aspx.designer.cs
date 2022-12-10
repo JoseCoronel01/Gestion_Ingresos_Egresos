@@ -7,65 +7,74 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace UI_Gestion
+namespace UI_Gestion.Pages
 {
 
 
-    public partial class SiteMaster
+    public partial class frmCambiarContrasena
     {
 
         /// <summary>
-        /// Control lbTitulo.
+        /// Control lbContrasenaActual.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbTitulo;
+        protected global::System.Web.UI.WebControls.Label lbContrasenaActual;
 
         /// <summary>
-        /// Control linkCambiarContrasena.
+        /// Control txtContrasenaActual.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton linkCambiarContrasena;
+        protected global::System.Web.UI.WebControls.TextBox txtContrasenaActual;
 
         /// <summary>
-        /// Control linkSalir.
+        /// Control lbContrasenaNueva.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton linkSalir;
+        protected global::System.Web.UI.WebControls.Label lbContrasenaNueva;
 
         /// <summary>
-        /// Control menu.
+        /// Control txtContrasenaNueva.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menu;
+        protected global::System.Web.UI.WebControls.TextBox txtContrasenaNueva;
 
         /// <summary>
-        /// Control up1.
+        /// Control lbConfirmarContrasenaNueva.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel up1;
+        protected global::System.Web.UI.WebControls.Label lbConfirmarContrasenaNueva;
 
         /// <summary>
-        /// Control MainContent.
+        /// Control txtConfirmarContrasenaNueva.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmarContrasenaNueva;
+
+        /// <summary>
+        /// Control btnGuardar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGuardar;
     }
 }
