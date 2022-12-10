@@ -75,8 +75,8 @@ namespace PCL_Gestion.dao
             strUsuarioSistema obj = null;
 
             string query = "Select * from UsuariosSistema " +
-                "where Usuario collate Latin1_General_CI_AS like '" + Usuario + "' " +
-                "and Password collate Latin1_General_CI_AS like '" + Password + "' ";
+                "where Usuario = '" + Usuario + "' collate SQL_Latin1_General_CP1_CS_AS " +
+                "and Password = '" + Password + "' collate SQL_Latin1_General_CP1_CS_AS ";
 
             daoConexion dao = new daoConexion(this.cxn);
 

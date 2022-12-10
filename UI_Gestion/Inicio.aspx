@@ -34,12 +34,12 @@
   <body class="text-center">
     <form class="form-signin" runat="server">
 
-      <img class="mb-4" src="/img/sis1.jpg" alt="" width="120" height="120">
+      <img class="mb-4" src="/img/sis1.jpg" alt="" width="120" height="120"><br />
 
-      <asp:Label for="txtUserName" runat="server" Text="Nombre de usuario" CssClass="sr-only"></asp:Label>
+      <asp:Label for="txtUserName" runat="server" Text="Nombre de usuario:" Font-Bold="true"></asp:Label>
       <asp:TextBox ID="txtUserName" runat="server" CssClass="form-control"></asp:TextBox>
 
-      <asp:Label for="txtPassword" runat="server" Text="Contraseña" CssClass="sr-only"></asp:Label>
+      <asp:Label for="txtPassword" runat="server" Text="Contraseña:" Font-Bold="true"></asp:Label>
       <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
 
       <asp:Button ID="btnEntrar" runat="server" Text="Entrar" OnClick="btnEntrar_Click" CssClass="btn btn-lg btn-primary btn-block" />
