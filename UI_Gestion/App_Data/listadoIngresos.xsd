@@ -15,8 +15,6 @@
               <xs:element name="DesConcepto" type="xs:string" minOccurs="0" />
               <xs:element name="NombreCompleto" type="xs:string" minOccurs="0" />
               <xs:element name="Subtotal" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Tasa" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Total" type="xs:decimal" minOccurs="0" />
               <xs:element name="DesEstatus" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>

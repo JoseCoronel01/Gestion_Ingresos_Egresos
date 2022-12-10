@@ -63,8 +63,28 @@ namespace PCL_Gestion.BusinessRules
         {
             DataSet ds = new DataSet("listado");
             string est = string.Empty;
-            DateTime dFecha = DateTime.Parse(delaFecha);
-            DateTime aFecha = DateTime.Parse(alaFecha);
+
+            DateTime dFecha = new DateTime();
+            DateTime aFecha = new DateTime();
+
+            if (String.IsNullOrEmpty(delaFecha) == true)
+            {
+                dFecha = new DateTime(1999, 1, 1);
+            }
+            else
+            {
+                dFecha = DateTime.Parse(delaFecha);
+            }
+
+            if (String.IsNullOrEmpty(alaFecha) == true)
+            {
+                aFecha = new DateTime(2999, 12, 31);
+            }
+            else
+            {
+                aFecha = DateTime.Parse(alaFecha);
+            }
+
             switch (estatus)
             {
                 case strIngreso.eEstatus.Emitido:
@@ -132,8 +152,28 @@ namespace PCL_Gestion.BusinessRules
         {
             DataSet ds = new DataSet("listado");
             string est = string.Empty;
-            DateTime dFecha = DateTime.Parse(delaFecha);
-            DateTime aFecha = DateTime.Parse(alaFecha);
+
+            DateTime dFecha = new DateTime();
+            DateTime aFecha = new DateTime();
+
+            if (String.IsNullOrEmpty(delaFecha) == true)
+            {
+                dFecha = new DateTime(1999, 1, 1);
+            }
+            else
+            {
+                dFecha = DateTime.Parse(delaFecha);
+            }
+
+            if (String.IsNullOrEmpty(alaFecha) == true)
+            {
+                aFecha = new DateTime(2999, 12, 31);
+            }
+            else
+            {
+                aFecha = DateTime.Parse(alaFecha);
+            }
+
             switch (estatus)
             {
                 case strEgreso.eEstatus.Activo:
