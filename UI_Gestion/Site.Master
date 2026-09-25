@@ -60,12 +60,8 @@
                 </ul>
             </div>
             <hr />
-            <asp:UpdatePanel ID="up1" runat="server">
-                <ContentTemplate>
-                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                    </asp:ContentPlaceHolder>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %></p>

@@ -9,6 +9,7 @@
               <xs:element name="Clave" type="xs:string" minOccurs="0" />
               <xs:element name="Nombre" type="xs:string" minOccurs="0" />
               <xs:element name="CtaBanco" type="xs:string" minOccurs="0" />
+              <xs:element name="CtaClabe" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
