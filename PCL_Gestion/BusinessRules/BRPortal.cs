@@ -17,7 +17,7 @@ namespace PCL_Gestion.BusinessRules
         {
             SqlConnection cxn = new SqlConnection(this.cxn);
 
-            SqlDataAdapter adapter = new SqlDataAdapter("Select CadenaConexion from BDS where Clave='" + clave + "'", cxn);
+            SqlDataAdapter adapter = new SqlDataAdapter("Select Nombre from Portal where Clave='" + clave + "'", cxn);
 
             DataSet ds = new DataSet();
 
@@ -25,7 +25,7 @@ namespace PCL_Gestion.BusinessRules
 
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
             {
-                return ds.Tables[0].Rows[0]["CadenaConexion"].ToString();
+                return ds.Tables[0].Rows[0]["Nombre"].ToString();
             }
             else
             {

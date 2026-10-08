@@ -2,7 +2,8 @@
 using UI_Gestion.Code;
 using PCL_Gestion.str;
 using PCL_Gestion.dao;
-using System.Configuration;
+using PCL_Gestion.BusinessRules;
+using PCL_Gestion.util;
 
 namespace UI_Gestion
 {
@@ -17,11 +18,13 @@ namespace UI_Gestion
         {
             if (txtUserName.Text != "" && txtPassword.Text != "")
             {
-                //BRPortal portal = new BRPortal(this.GetStringConnectionPortal);
+                string cadena = Util.DesEncripta(this.GetStringConnectionPortal);
 
-                //string[] host = this.Request.Url.Host.Split(new string[] { "." }, StringSplitOptions.RemoveEmptyEntries);
+                BRPortal portal = new BRPortal(cadena);
 
-                this.GetStringConnection = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+                string[] host = this.Request.Url.Host.Split(new string[] { "." }, StringSplitOptions.RemoveEmptyEntries);
+
+                this.GetStringConnection = portal.GetPortal(host[0]);
 
                 strUsuarioSistema str = null;
 
